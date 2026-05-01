@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+}
+
+
+/* .hero {
+  height: 100vh;
+  background: url("image/INDEX\ IMAGE.jpeg") center/cover no-repeat;
+  position: relative;
+  color: white;
+  background-blend-mode:screen ;
+  background-size: cover;
+
+  filter: 1.25;
+} */
+
+
+.hero-overlay {
+  width: 100%;
+   height:auto;
+    background: rgba(0, 0, 0, 0.797);;
+   background: url("image/index\ image\ 3.jpeg")center/cover no-repeat;
+  padding: 40px;
+  /* box-shadow: 0 10px 30px rgba(102, 96, 96, 0.5); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background:cover;
+}
+
+
+
+
+
+.nav-container{
+  width: 100%;
+  height: 100px;
+  
+}
+
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    gap: 20px; 
+     position: fixed;
+    z-index: 1000;
+}
+
+.nav ul{
+  width: 70%;
+  height: 50px;
+  display: flex;
+  gap: 25px;
+  text-align: right;
+  justify-content:center;
+  list-style: none;
+  /* padding: 1rem; */
+  /* margin-left: 48%; */
+  margin: auto;
+  font-family: sans-serif;
+}
+
+
+
+.nav ul li{
+  /* width:20%; */
+  height:40px;
+ text-align: center;
+  color: white;
+  font-size: 20px;
+  /* background-color: #011837; */
+  border-radius: 10px;
+  padding:5px;
+    /* background:linear-gradient(to right,#011837, rgb(173, 173, 196)); */
+   background-color: transparent; 
+}
+
+.nav ul li i{
+   color: #c4bdbd;
+}
+
+.nav ul li a{
+   color: #c4bdbd;
+}
+
+
+/* .nav li:hover{
+   width: 20%;
+  height: 40px; 
+  border:2px solid rgb(144, 139, 139);
+  border-radius: 10px;
+  color: #c4bdbd;
+} */
+
+
+
+/* Logo Image */
+.logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+  font-size:30px;
+}
+
+#img{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+ #p{
+  font-size:80px;
+  text-align: center;
+  color: #c4bdbd;
+}
+
+/* Hotel Name */
+.logo-container p {
+  font-size: 24px;
+  color: rgb(192, 192, 208);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+.hero-content {
+  text-align: center;
+  margin-top: 120px;
+   /* border: 2px solid red; */
+   margin: auto;
+}
+
+.hero-content h1{
+    font-size: 45px;
+    color: rgb(113, 113, 119);
+}
+
+
+.hero-content h2{
+  color: #c8a96a;  
+  font-size: 40px;
+}
+
+.hero-content p{
+    color: rgb(184, 179, 179);
+}
+
+.hero-content button {
+  padding: 15px 30px;
+  background: #c8a96a;
+  border: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+
+
+
+
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+    height: 80vh;
+    /* background: url("../images/hero.jpg") center/cover no-repeat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right, #0f0f14,#434345),#0f0f14;;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #f8f4f4;
+    width: 90%;
+    max-width: 1100px;
+}
+.hero-content p{
+    color:  #e6dcdc;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color:  #e6d8d8;
+}
+
+.subtitle {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* ================= SEARCH BAR ================= */
+.search-bar {
+    background-color: #111;
+    /* background: #fff; */
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+}
+
+.search-item {
+    flex: 1;
+    min-width: 150px;
+    text-align: left;
+}
+
+.search-item label {
+    font-size: 12px;
+    color: #e0d7d7;
+    padding-left: 20px;
+}
+
+.search-item input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 6px 0;
+    border: 2px solid  #555;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.search-btn {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ================= CATEGORIES ================= */
+.categories {
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+    overflow-x: auto;
+    /* background: #fff; */
+    background:#021220;
+}
+
+.categories button {
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #fff; 
+}
+
+.categories .active {
+    background: #111;
+    color: #fff;
+}
+
+.filter-btn {
+    margin-left: auto;
+}
+
+/* ================= PROPERTY SECTION ================= */
+.property-section {
+    padding: 40px 5%;
+}
+
+.property-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* ================= CARD ================= */
+.card {
+    background:#011837 ;
+    /* background: #fff; */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(145, 141, 141, 0.726);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+     color: #ddd4d4;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #ddd4d4;
+}
+
+.card-body span {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+@media (max-width: 900px){
+
+
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+     left: 0;
+}
+
+
+  .nav ul{
+    width: 100%;
+   gap: 18px;
+   justify-content:center;
+   padding: 0 12px;
+   align-items: center;
+  
+}
+
+.nav ul li{
+  width:100%;
+  height: auto;
+  /* margin-left: 20px;  */
+  color: rgb(173, 173, 196);
+  font-size: 17px;
+  justify-content: center;
+}
+
+
+.nav-container{
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+
+  
+}
+
+
+
+
+
+  .hero-content {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  /* Stack search items vertically */
+  .search-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-item {
+    width: 100%;
+  }
+
+  .search-item input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Make button full width */
+  .search-btn {
+    width: 100%;
+    padding: 12px;
+    /* font-size: 16px; */
+  }
+
+
+
+  /*........... categories ..........*/
+
+
+  .categories {
+    display: flex;
+    overflow-x: auto;          /* enables horizontal scroll */
+    gap: 10px;
+    padding: 10px;
+    white-space: nowrap;       /* prevents wrapping */
+    scrollbar-width: none;     /* hide scrollbar (Firefox) */
+  }
+
+  .categories::-webkit-scrollbar {
+    display: none;             /* hide scrollbar (Chrome) */
+  }
+
+  .categories button {
+    flex: 0 0 auto;            /* prevents shrinking */
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .filter-btn {
+    margin-left: auto;         /* pushes it to the right */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
