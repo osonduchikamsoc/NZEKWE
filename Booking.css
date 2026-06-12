@@ -1,0 +1,428 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f9fb;
+    color: #333333;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.booking-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* --- Header Text --- */
+.main-header img{
+  width: 47px;
+  height: 47px;
+  object-fit: contain;
+  padding-top: 10px;
+  
+}
+
+
+.main-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.returnbtn{
+   border: none;
+    font-size: 25px;
+    background-color: transparent;
+     color: white;
+}
+
+.main-header h1 {
+    color: #0b3c5d;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.main-header p {
+    color: #666666;
+    font-size: 1rem;
+}
+
+
+
+
+/* --- Main Card --- */
+
+
+.booking-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eef2f5;
+    overflow: hidden;
+}
+
+
+
+
+.contheader{
+    width: auto;
+    height: 90px;
+    /* background: #28a745; */
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    justify-content:space-between;
+}
+
+
+.Gotohomebtn{
+    width: 35px; ;
+    height:40px ;
+    /* background-color:#4d4b4b ; */
+    cursor: pointer;
+    font-size: 16px;
+    /* font-weight: 600; */
+    transition: all 0.3s ease;
+    /* color: #fff; */
+    border-radius: 7px;
+    border: none;
+   
+}
+
+
+
+.Gotohomebtn i{
+    font-size: 20px;
+    color: inherit;
+    font-weight: 500;
+    /* color: red; */
+} 
+
+.Gotohomebtn:active{
+    transform: translate(-2px);
+}
+
+.Gotohomebtn:hover{
+    background-color: #554f4c;
+    color:#333 ;
+    transform:translateX(-2px);
+}
+
+
+
+
+
+.card-header {
+    background-color: #003580;
+    color: #ffffff;
+    padding: 18px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content:space-between;
+}
+
+.card-header h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.card-header h2 i {
+    margin-right: 10px;
+}
+
+/* --- Form Layouts --- */
+.booking-form {
+    padding: 25px;
+    
+}
+
+.form-grid {
+    display: grid;
+    gap: 18px 20px;
+    margin-bottom: 18px;
+}
+
+/* Grid Layout definitions for wide screens */
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+/* Layout for the row with the Search button */
+.grid-4-search {
+    grid-template-columns: repeat(3, 1fr) 220px;
+    align-items: end;
+}
+
+.span-2-desktop {
+    grid-column: span 1; /* Fallback */
+}
+
+/* --- Form Elements --- */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #001e42;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    color: #666666;
+    font-size: 0.95rem;
+    pointer-events: none;
+}
+
+.booking-form input, 
+.booking-form select {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #444444;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.booking-form input::placeholder {
+    color: #888888;
+}
+
+.booking-form input:focus, 
+.booking-form select:focus {
+    border-color: #003580;
+}
+
+
+.booking {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 10px;
+  background: #12121a44;
+}
+
+
+
+
+
+/* Custom styling to match native drop-down arrows clean look */
+
+.select-wrapper::after {
+    content: '\f107';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    color: #333;
+    pointer-events: none;
+}
+.booking-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 35px;
+}
+
+.helper-text {
+    font-size: 0.72rem;
+    color: #666666;
+    margin-top: 5px;
+}
+
+/* --- Section Dividers --- */
+
+.section-divider {
+    border: 0;
+    border-top: 1px solid #eceff1;
+    margin: 25px 0;
+}
+
+.section-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #003580;
+    margin-bottom: 18px;
+    letter-spacing: 0.3px;
+}
+
+/* --- Search Button --- */
+.search-btn-container {
+    justify-content: flex-end;
+}
+
+.btn-search {
+    width: 100%;
+    background-color: #00224f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 45px;
+}
+
+.btn-search:hover {
+    background-color: #003580;
+}
+
+/* --- Security Banner --- */
+.security-banner {
+    background-color: #ebf3fc;
+    border: 1px solid #d2e4f9;
+    border-radius: 6px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.security-icon {
+    color: #003580;
+    font-size: 1.5rem;
+}
+
+.security-banner strong {
+    font-size: 0.8rem;
+    color: #00224f;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.security-banner p {
+    font-size: 0.78rem;
+    color: #555555;
+}
+
+
+.submitbtn{
+    width: 30%;
+    height: auto;
+  padding: 10px;
+  border: none;
+  background: gold;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+/* ==================================== */
+
+/* --- Responsive Adjustments (Desktop layout correction) --- */
+@media (min-width: 550px) {
+
+
+
+
+    .span-2-desktop {
+        grid-column: span 2;
+    }
+}
+
+/* --- Responsive Layout (Breakpoints down to 550px and below) --- */
+@media (max-width: 768px) {
+    .grid-3, .grid-4-search {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-4-search .form-group:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .search-btn-container {
+        grid-column: span 2;
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .returnbtn{
+     border: none;
+    font-size: 25px;
+    background-color: transparent;
+     color: white;
+}
+
+    .booking-form {
+        padding: 15px;
+    }
+
+    .form-grid, .grid-3, .grid-2, .grid-4-search {
+        grid-template-columns: 1fr; /* Turns everything into a single clean column stack */
+        gap: 15px;
+    }
+
+    .grid-4-search .form-group:nth-child(3) {
+        grid-column: span 1;
+    }
+
+
+
+
+    .submitbtn{
+         width: 100%;
+         height: auto;
+        padding: 10px;
+        border: none;
+        background: gold;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .search-btn-container {
+        grid-column: span 1;
+        margin-top: 5px;
+    }
+
+    .security-banner {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}

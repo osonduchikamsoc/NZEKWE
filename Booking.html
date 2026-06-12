@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="stylesheet" href="Booking.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="booking-container" id="booking-container">
+        
+        <header class="main-header">
+            <h1><img src="image/logo2.png" alt="">&nbsp; HOTEL BOOKING</h1>
+            <p>Please fill in the details below to check availability and book your stay.</p>
+           
+        </header>
+
+        <main class="booking-card">
+            <div class="card-header">
+                <h2> BOOK YOUR STAY  <i class="fa-solid fa-bed"></i></h2>
+
+                <a href="index.html"> <button class="returnbtn">
+                   <!-- <i class="fa-solid fa-arrow-rotate-left"></i> -->
+                    <i class="fa-solid fa-bars"></i> 
+                </button></a>
+                
+            </div>
+
+            <form class="booking-form">
+                
+                <div class="form-grid grid-3">
+
+
+                    <div class="form-group">
+                        <label>ROOMS</label>
+                        <div class="input-wrapper select-wrapper">
+                            <i class="fa-solid fa-bed input-icon"></i>
+                            <select class="select">
+                                <option>1 Room</option>
+                                <option>2 Rooms</option>
+                                <option>3 Rooms</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!-- <div class="form-group span-2-desktop">
+                        <label>DESTINATION /</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-location-dot input-icon"></i>
+                            <input type="text" placeholder="Enter city, hotel or destination">
+                        </div>
+                    </div> -->
+
+
+                    <div class="form-group">
+                        <label>CHECK-IN DATE</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-calendar-days input-icon"></i>
+                            <input type="text" placeholder="Select check-in date" onfocus="(this.type='date')">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>CHECK-OUT DATE</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-calendar-days input-icon"></i>
+                            <input type="text" placeholder="Select check-out date" onfocus="(this.type='date')">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-grid grid-4-search">
+
+
+
+                    <div class="form-group span-2-desktop">
+                        <label>DESTINATION /</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-location-dot input-icon"></i>
+                            <input type="text" placeholder="Enter city, hotel or destination">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>ADULTS</label>
+                        <div class="input-wrapper select-wrapper">
+                            <i class="fa-solid fa-user input-icon"></i>
+                            <select class="select">
+                                <option>1 Adult</option>
+                                <option selected>2 Adults</option>
+                                <option>3 Adults</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>CHILDREN </label>
+                        <div class="input-wrapper select-wrapper">
+                            <i class="fa-solid fa-child input-icon"></i>
+                            <select class="select">
+                                <option selected>0 Children</option>
+                                <option>1 Child</option>
+                                <option>2 Children</option>
+                            </select>
+                        </div>
+                        <!-- <small class="helper-text">Age of children at time of stay</small> -->
+                    </div>
+
+                    <!-- <div class="form-group search-btn-container">
+                        <button type="submit" class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i> SEARCH HOTELS
+                        </button>
+                    </div> -->
+                </div>
+
+                <hr class="section-divider">
+
+                <h3 class="section-title">GUEST DETAILS</h3>
+                
+                <div class="form-grid grid-2">
+                    <div class="form-group">
+                        <label>FULL NAME</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-user input-icon"></i>
+                            <input type="text" placeholder="Enter full name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>EMAIL ADDRESS</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-envelope input-icon"></i>
+                            <input type="email" placeholder="Enter email address">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>PHONE NUMBER</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-phone input-icon"></i>
+                            <input type="tel" placeholder="Enter phone number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>COUNTRY / REGION</label>
+                        <div class="input-wrapper select-wrapper">
+                            <i class="fa-solid fa-earth-americas input-icon"></i>
+                            <select class="select">
+                                <option value="" disabled selected>Select country / region</option>
+                                <option>United States</option>
+                                <option>United Kingdom</option>
+                                <option>Canada</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                  
+                <section class="booking" id="booking">
+
+                    <div class="form-group">
+                         <label>ROOM TYPE</label>
+
+                            <div class="input-wrapper select-wrapper">
+                                <i class="fa-solid fa-bed input-icon"></i>
+                                <select class="select">
+                                    <option value="">select Rooms</option>
+                                    <option value="Deluxe">Deluxe Room</option>
+                                    <option value="Junior">Junior Suite</option>
+                                    <option value="Executive">Executive Suite</option> 
+                                </select>
+
+                             </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>SELECT ROOM NO</label>
+                            <div class="input-wrapper select-wrapper">
+                                <i class="fa-solid fa-bed input-icon"></i>
+                                <select class="roomNumber">
+                                        
+                                    <option value="number">select Room Number</option>
+                                </select>
+                            </div>
+                    </div>
+
+                </section>
+
+
+
+
+
+
+                <hr class="section-divider">
+
+                <h3 class="section-title">ADDITIONAL PREFERENCES (OPTIONAL)</h3>
+                
+                <div class="form-grid grid-2">
+
+                    <div class="form-group">
+                        <label>SPECIAL REQUESTS</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-comment-dots input-icon"></i>
+                            <input type="text" placeholder="Any special requests?">
+                        </div>
+                    </div>
+
+                </div>
+
+
+               <button type="submit" class="submitbtn">submit</button>
+
+
+                <div class="security-banner">
+                    <i class="fa-solid fa-shield-halved security-icon"></i>
+                    <div>
+                        <strong>SAFE & SECURE BOOKING</strong>
+                        <p>Your information is protected and your booking is safe with us.</p>
+                    </div>
+                </div>
+
+
+                
+
+            </form>
+        </main>
+    </div>
+
+    
+</body>
+
+
+<script>
+
+
+// =======Get the input values===================
+
+    // const     destination = document.querySelector("destination").value='';
+    // const    checkInDate= document.querySelector("checkInDate").value='';
+    // const    checkOutDate= document.querySelector("checkOutDate").value='';
+    // const    room= document.querySelector("rooms").value='';
+    // const    adults= document.querySelector("adults").value='';
+    // const    children= document.querySelector("children").value='';
+    // const    fullName= document.querySelector("fullName").value='';
+    // const    email= document.querySelector("email").value='';
+    // const    phone= document.querySelector("phone").value='';
+    // const    country= document.querySelector("country").value='';
+    // const     roomtype= document.querySelector("roomType").value='';
+    // const     roomnumber= document.querySelector("roomNumber").value;
+    //  const     specialRequests= document.querySelector("specialRequests").value
+
+    const inputwrapper=document.querySelectorAll('.input-wrapper').value='';
+    const select=document.querySelectorAll('.select').value='';
+   
+
+
+// =======================================================
+
+
+    const submitbtn= document.querySelector('.submitbtn');
+    submitbtn.addEventListener('click', ()=>{
+        alert('active');
+    }); 
+
+    let PhoneNumber=document.querySelector('.Phone-Number')
+
+
+    // ==========Room type==========
+
+    const roomType =document.querySelector('.roomType')
+    const roomNumber=document.querySelector('.roomNumber')
+
+    const rooms = {
+        Deluxe:[101,108,110,107],
+        Junior:[111,103,105,106,109,114,115],
+        Executive:[102,103, 112,104,]
+    };
+
+    roomType .addEventListener("change", function () {
+    const selectedRoom = this.value;
+    roomNumber.innerHTML=`
+        <option value="number">select Room Number</option>
+    `
+    if(rooms [selectedRoom]){
+        rooms [selectedRoom].forEach(function (Number
+        ){
+        roomNumber.innerHTML +=
+        `
+            <option value="${ Number} ">${ Number} </option>
+        `;
+        });
+
+    }
+
+    });
+
+
+    const room1={
+    roomName:'Deluxe',
+    roomNumber:101,
+    roomImage: '',
+    roomPrice: 100
+    }
+
+    const room2={
+    roomName:'exclusive',
+    roomNumber:101,
+    roomImage: '',
+    roomPrice: 100
+    }
+
+    const room3 ={
+    roomName:' Junior',
+    roomNumber:111,
+    roomImage: '',
+    roomPrice: 200
+    }
+
+    const  roomlist =[room1,room2,room3]
+
+    console.log(room1);
+    // =========display the rooms ==========
+
+    function displayrooms() {
+
+    roomlist.innerHTML +=Rm
+
+    roomlist.forEach((room)=>{
+    
+        let Rm = html_content=`
+    
+        <section class="rooms">
+
+        <h2>${ roomlist.title}</h2>
+
+            <div class="room-grid">
+
+            <div class="room-card" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="${ room.image}  image/DELUX ROOM.jpeg">
+                <h3>${ room.title}      Deluxe Room</h3>
+            </div>
+
+            <div class="room-card" data-aos="zoom-in" data-aos-duration="3000">
+                <img src=" ${ room.image} image/JUNIOR SUITE.jpeg">
+                <h3>${ room.title}      Junior Suite</h3>
+            </div>
+
+            <div class="room-card" data-aos="zoom-in" data-aos-duration="3000">
+                <img src=" ${ room.image} image/executive room.jpeg">
+                <h3> ${ room.title}      Executive Suite</h3>
+            </div>
+
+            </div>
+        </section>
+    `;
+
+
+        rooms.insertAdjacentHTML('befoere', html_content)
+
+    } )
+
+ }
+
+
+</script>
+
+<!-- <script>
+
+    const form = document.getElementById("bookingForm");
+
+
+    // select all inputs and selects
+    const allFields = form.querySelectorAll("input, select");
+    console.log("All inputs and selects:", allFields);
+
+
+
+    // get all values on form submit
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const data = {
+        destination: document.getElementById("destination").value,
+        checkInDate: document.getElementById("checkInDate").value,
+        checkOutDate: document.getElementById("checkOutDate").value,
+        rooms: document.getElementById("rooms").value,
+        adults: document.getElementById("adults").value,
+        children: document.getElementById("children").value,
+        fullName: document.getElementById("fullName").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        country: document.getElementById("country").value,
+        roomType: document.getElementById("roomType").value,
+        roomNumber: document.getElementById("roomNumber").value,
+        specialRequests: document.getElementById("specialRequests").value
+      };
+
+      console.log("Form data:", data);
+    });
+  </script>
+
+
+
+
+ 
+
+   
+
+
+
+
+
+
+
+</html>
+
+
