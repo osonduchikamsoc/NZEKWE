@@ -385,7 +385,7 @@ h1, h2, h3, .title {
 
 .form-card {
   /* background: #fff; */
-  border: 1px solid var(--border);
+  border: 0px solid ;
   box-shadow: var(--shadow);
   padding: 52px;
 }
@@ -402,7 +402,7 @@ h1, h2, h3, .title {
   max-width: 360px;
   color: var(--text-light);
   font-size: 0.98rem;
-    color: #161616;
+    color:white;
 }
 
 .contact-form {
@@ -499,18 +499,18 @@ h1, h2, h3, .title {
 .quick-row {
   display: grid;
   grid-template-columns: 1fr 1.2fr 1.2fr;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.45);
-  
+  /* border: 1px solid var(--border); */
+  background: rgba(236, 230, 230, 0.123);
 }
 
 .quick-col {
   padding: 20px 22px;
-  border-right: 1px solid var(--border);
+  border-right: 0px solid ;
   display: flex;
   align-items: center;
   min-height: 72px;
   color: var(--text-light);
+
   font-size: 0.96rem;
 }
 
