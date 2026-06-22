@@ -512,21 +512,21 @@ grid-template-columns: repeat(auto-fit, minmax (300px,1fr));
 
 
 @media(max-width:550px){
-    .logo_cont  {
-  width: 40%;
+  .logo_cont  {
+  width: auto;
   display:flex;
   align-items: center;
-   margin-left: 10px;
-   font-family: "Cormorant Garamond", serif;
-}
+  margin-left: 10px;
+  font-family: "Cormorant Garamond", serif;
+  }
 
 
 
-    .img{
-     width: 45px;
-     height: 45px;
+  .img{
+   width: 45px;
+   height: 45px;
      
-    }
+  }
 
 }
 
@@ -733,7 +733,7 @@ grid-template-columns: repeat(auto-fit, minmax (300px,1fr));
 
 @media(max-width:750px){
     .logo_cont  {
-  width: 40%;
+  width: auto;
   display:flex;
   align-items: center;
    margin-left: 10px;
@@ -943,7 +943,7 @@ grid-template-columns: repeat(auto-fit, minmax (300px,1fr));
 
 @media(max-width:1200px){
     .logo_cont  {
-  width: 40%;
+  width: auto;
   display:flex;
   align-items: center;
    margin-left: 10px;
