@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title> NINA HOTELS </title>
+    <title> NINA HOTELS</title>
 
     <!--Font awesome-->
 
@@ -41,45 +41,34 @@
             <div class="hero-overlayy">
 
                 <div class="nav-container">
+                     <header class="header">
+                        <div class="dropdown dropdown" >
+                            <button class="fa-solid fa-bars"  data-bs-toggle="dropdown" aria-expanded="false"></i>  
 
-                    <header class="header">
-                        <div class="dropdown">
-                            
-                            <button class="fa-solid fa-bars"  data-bs-toggle="dropdown" aria-expanded="false"></i>    
-                               <!-- class="btn btn-secondary dropdown-toggle" type="button" -->
                             </button>
-
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="index.html">Home &nbsp;<i class="fas fa-bed"></i></a> </li>
                                 <li><a class="dropdown-item" href="facility.html">Facilities &nbsp;<i class="fas fa-dumbbell"></i></a></li>
                                 <li><a class="dropdown-item" href="contact.html">Contact &nbsp;<i class="fas fa-phone"></i></a> </li>
-                                <li><a class="dropdown-item" href="AboutUs.html">About Us&nbsp;<i class="fa-solid fa-user input-icon"></i></a> </li>
-                            
+                                <li><a class="dropdown-item" href="AboutUs.html">About Us &nbsp;<i class="fa-solid fa-user input-icon"></i></a> </li>
+     
                             </ul>
                         </div>
-
-
                         <nav class="nav">
-
                             <div class="logo_cont">
                                 <img src="image/logo2.png" alt="" class="img">
-                                    <h2> Nina Hotels</h2>
+                                <h2>Nina Hotels</h2>
                             </div>
-
-
-
-
                             <ul>
                                 <li><a href="index.html">Home &nbsp;<i class="fas fa-bed"></i></a> </li>
                                 <li><a href="facility.html">Facilities &nbsp;<i class="fas fa-dumbbell"></i></a></li>
+                                <!-- <li><a href="event.html"> Events &nbsp;<i class="fas fa-calendar-check"></i></a></li> -->
                                 <li><a href="contact.html">Contact &nbsp;<i class="fas fa-phone"></i></a> </li>
-                                 <li><a href="AboutUs.html">About Us &nbsp;<i class="fa-solid fa-user input-icon"></i></a> </li>
+                                <li><a href="AboutUs.html">About Us &nbsp;<i class="fa-solid fa-user input-icon"></i></a> </li>
                             </ul>
 
                         </nav>
                     </header>
-
-                    
 
                 </div>
 
@@ -154,7 +143,7 @@
                 <div class="img_section">
                     <img src="image/hotel view.jpeg" alt="" class="slide active">
                     <img src="image/DELUX ROOM.jpeg" alt="" class="slide">
-                    <img src="image/WhatsApp Image 2026-02-14 at 6.42.02 AM (1).jpeg" alt="" class="slide">
+                    <img src="image/hotel view.jpeg" alt="" class="slide">
                 </div>
 
             </div>
@@ -296,37 +285,28 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
-
-
-
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-
  <script>
 
     const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
     const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl))
 
+    
 
-    // Wait until the DOM is fully loaded
+
+    // =============== slide============
     document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll('.img_section .slide');
   let currentSlide = 0;
 
-  // Only run the interval if slides actually exist
+  
   if (slides.length > 0) {
     setInterval(() => {
-      // Remove active class from the current slide
+      
       slides[currentSlide].classList.remove('active');
       
-      //  Move to the next slide (loops back to 0 at the end)
       currentSlide = (currentSlide + 1) % slides.length;
-      
-      // Add active class to the new slide
       slides[currentSlide].classList.add('active');
-    }, 4000); // Changes every 3 seconds
+    }, 4000); 
   }
 });
 

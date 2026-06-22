@@ -344,13 +344,10 @@ body {
 
 
 
-/* ==================================== */
+/* ==================550px================== */
 
 /* --- Responsive Adjustments (Desktop layout correction) --- */
 @media (min-width: 550px) {
-
-
-
 
     .span-2-desktop {
         grid-column: span 2;
@@ -374,6 +371,168 @@ body {
 }
 
 @media (max-width: 550px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .returnbtn{
+     border: none;
+    font-size: 25px;
+    background-color: transparent;
+     color: white;
+}
+
+    .booking-form {
+        padding: 15px;
+    }
+
+    .form-grid, .grid-3, .grid-2, .grid-4-search {
+        grid-template-columns: 1fr; /* Turns everything into a single clean column stack */
+        gap: 15px;
+    }
+
+    .grid-4-search .form-group:nth-child(3) {
+        grid-column: span 1;
+    }
+
+
+
+
+    .submitbtn{
+         width: 100%;
+         height: auto;
+        padding: 10px;
+        border: none;
+        background: gold;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .search-btn-container {
+        grid-column: span 1;
+        margin-top: 5px;
+    }
+
+    .security-banner {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+
+
+/* ========================750px========================= */
+
+
+@media (min-width: 750px) {
+
+    .span-2-desktop {
+        grid-column: span 2;
+    }
+}
+
+/* --- Responsive Layout (Breakpoints down to 550px and below) --- */
+@media (max-width: 750px) {
+    .grid-3, .grid-4-search {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-4-search .form-group:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .search-btn-container {
+        grid-column: span 2;
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .returnbtn{
+     border: none;
+    font-size: 25px;
+    background-color: transparent;
+     color: white;
+}
+
+    .booking-form {
+        padding: 15px;
+    }
+
+    .form-grid, .grid-3, .grid-2, .grid-4-search {
+        grid-template-columns: 1fr; /* Turns everything into a single clean column stack */
+        gap: 15px;
+    }
+
+    .grid-4-search .form-group:nth-child(3) {
+        grid-column: span 1;
+    }
+
+
+
+
+    .submitbtn{
+         width: 100%;
+         height: auto;
+        padding: 10px;
+        border: none;
+        background: gold;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .search-btn-container {
+        grid-column: span 1;
+        margin-top: 5px;
+    }
+
+    .security-banner {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================== */
+
+@media (min-width: 1200px) {
+
+    .span-2-desktop {
+        grid-column: span 2;
+    }
+}
+
+/* --- Responsive Layout (Breakpoints down to 550px and below) --- */
+@media (max-width: 1200px) {
+    .grid-3, .grid-4-search {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-4-search .form-group:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .search-btn-container {
+        grid-column: span 2;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
     body {
         padding: 15px 10px;
     }

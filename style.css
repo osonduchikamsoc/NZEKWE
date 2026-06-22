@@ -499,7 +499,7 @@
 
 
 
-/* ===================================== */
+/* ================ mobile view===================== */
 
 
 
@@ -531,12 +531,10 @@
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 550px) {
 
 
 .hero {
-  /* height: 100vh; */
-  /* background: url("image/INDEX\ IMAGE.jpeg") center/cover no-repeat; */
   position: relative;
   color: white;
   background-blend-mode:screen ;
@@ -559,7 +557,6 @@
     justify-content:0;
     left: 0;
     z-index: -1;
-   background: ;
    position: absolute;
    background-color: #00224f;
   bottom:20%;
@@ -594,8 +591,8 @@
   display: flex;
   justify-content: right;
   position: absolute;
-  top: 10%;
-  right: 35px;
+  top: 25%;
+  right:35px;
 }
 
 .dropdown button{
@@ -604,11 +601,8 @@
   color: white;
   padding: 1rem;
   font-size: 25px;
+ 
 }
-
-
-
-
 
 .nav ul li{
   /* display: block; */
@@ -620,8 +614,6 @@
   justify-content: center;
  
 }
-
-
 
 .dropdown-menu li i{
    color: #d9610c;
@@ -645,20 +637,685 @@
   
 }
 
+@media(max-width: 550px){
+
+    /* Main content section */
+    .main_content_box{
+      flex-direction: column-reverse;
+      gap: 40px;
+      height: 100vh;
+
+    }
+
+   .main_content_cont {
+    width: 100%;
+     background:linear-gradient(to right, #0f0f14d3,#434345da),#0f0f14d0;
+   
+  }
+
+ 
+  .img_section  {
+    width: 100%;
+    height: 700px !important;  
+    overflow: hidden;
+  }
+
+
+  .img_section img {
+    width: 100%;
+    opacity: 1; 
+    transform: translateX(100%); 
+    /* object-fit: contain; */
+    
+  }
+
+
+  /* Brings the active mobile image perfectly into the view frame */
+  .img_section img.active {
+    transform: translateX(0);
+  }
+
+  /*  */
+  .img_section img.slide-left {
+    transform: translateX(-100%);
+  }
+
+
+    .text-section{
+        width: 100%;
+         max-height: 100hv ;
+        font-size: 10px;
+      
+      
+    }
+
+    .text-A{
+       width: 100%;
+       height: auto;
+        font-size:px;
+        line-height: 1.5;
+        
+    }
+
+  
+
+    .Bookingbtn{
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        order: 3;
+       
+    }
+
+    /* Rooms section - This will appear AFTER the button */
+
+    .rooms{
+        order: 4;
+        width: 100%;
+        margin-top: 0%;
+        margin-top: 0px;
+   
+    }
+
+    .rooms h2{
+        text-align: center;
+        font-size: 24px;
+        padding: 0 10px;
+        margin-top:100%;
+    }
+
+    .room-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-top: 40%;
+    }
+
+    .room-card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .room-card img{
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+}
+
+
 
 @media (max-width: 550px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align:left;
+  }
 
+  .footer-col form {
+    align-items: left;
+  }
+
+  .footer-col input {
+    width: 100%;
+  }
+}
+
+
+
+
+/* =============== */
+
+
+
+@media(max-width:750px){
+
+ .logo_content_wrapp{
+    padding-top: 20%;
+
+  }
+
+
+  .logo_cont  {
+  width: 40%;
+  display:flex;
+  align-items: center;
+  margin-left: 10px;
+   font-family: "Cormorant Garamond", serif;
+  
+}
+
+
+
+  .img{
+  width: 45px;
+  height: 45px;
+     
+  }
+
+}
+
+@media (max-width: 750px) {
+
+
+.hero {
+  position: relative;
+  color: white;
+  background-blend-mode:screen ;
+  background-size: cover;
+  filter: 1.25;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    gap: 20px; 
+    justify-content:0;
+    left: 0;
+    z-index: -1;
+   position: absolute;
+   background-color: #00224f;
+  bottom:20%;
+  padding: 1rem;
+   top: 0px;
+}
+
+
+.nav-container{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    /* position: fixed; */
+   
+  }
+
+
+  .nav ul{
+    width: 100%;
+  
+   justify-content:center;
+   padding: 0 12px;
+   align-items: center;
+   display: none;
+    
+  }
 
 
 
 .dropdown{
   display:block;
-  /* height: 200px; */
   display: flex;
   justify-content: right;
+  position: absolute;
+  top: 25%;
+  right:35px;
+}
+
+.dropdown button{
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 1rem;
+  font-size: 25px;
+ 
+}
+
+.nav ul li{
+  /* display: block; */
+  width:100%;
+  height: auto;
+  /* margin-left: 20px;  */
+  color: rgb(173, 173, 196);
+  font-size: 17px;
+  justify-content: center;
+ 
+}
+
+.dropdown-menu li i{
+   color: #d9610c;
+}
+
+.nav ul li a{
+   color: #0d0d0d;
+  
+}
+
+
+  .room-grid,
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .booking {
+    flex-direction: column;
+  }
+
+  
+}
+
+@media(max-width: 750px){
+
+    /* Main content section */
+    .main_content_box{
+      flex-direction: column-reverse;
+      gap: 40px;
+      height: 100vh;
+
+    }
+
+   .main_content_cont {
+    width: 100%;
+     background:linear-gradient(to right, #0f0f14d3,#434345da),#0f0f14d0;
+   
+  }
+
+ 
+  .img_section  {
+    width: 100%;
+    height: 700px !important;  
+    overflow: hidden;
+  }
+
+
+  .img_section img {
+    width: 100%;
+    opacity: 1; 
+    transform: translateX(100%); 
+    /* object-fit: contain; */
+    
+  }
+
+
+  /* Brings the active mobile image perfectly into the view frame */
+  .img_section img.active {
+    transform: translateX(0);
+  }
+
+  /*  */
+  .img_section img.slide-left {
+    transform: translateX(-100%);
+  }
+
+
+    .text-section{
+        width: 100%;
+         max-height: 100hv ;
+        font-size: 10px;
+      
+      
+    }
+
+    .text-A{
+       width: 100%;
+       height: auto;
+        font-size:px;
+        line-height: 1.5;
+        
+    }
+
+  
+
+    .Bookingbtn{
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        order: 3;
+       
+    }
+
+    /* Rooms section - This will appear AFTER the button */
+
+    .rooms{
+        order: 4;
+        width: 100%;
+        margin-top: 0%;
+        margin-top: 0px;
+   
+    }
+
+    .rooms h2{
+        text-align: center;
+        font-size: 24px;
+        padding: 0 10px;
+        margin-top:100%;
+    }
+
+    .room-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-top: 40%;
+    }
+
+    .room-card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .room-card img{
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align:left;
+  }
+
+  .footer-col form {
+    align-items: left;
+  }
+
+  .footer-col input {
+    width: 100%;
+  }
+}
+
+
+
+
+/* ============================== */
+
+
+
+@media(max-width:1200px){
+
+ .logo_content_wrapp{
+    padding-top: 20%;
+
+  }
+
+
+  .logo_cont  {
+  width: 40%;
+  display:flex;
+  align-items: center;
+  margin-left: 10px;
+   font-family: "Cormorant Garamond", serif;
+  
+}
+
+
+
+  .img{
+  width: 45px;
+  height: 45px;
+     
+  }
 
 }
 
+@media (max-width: 1200px) {
+
+
+.hero {
+  position: relative;
+  color: white;
+  background-blend-mode:screen ;
+  background-size: cover;
+  filter: 1.25;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    gap: 20px; 
+    justify-content:0;
+    left: 0;
+    z-index: -1;
+   position: absolute;
+   background-color: #00224f;
+  bottom:20%;
+  padding: 1rem;
+   top: 0px;
+}
+
+
+.nav-container{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    /* position: fixed; */
+   
+  }
+
+
+  .nav ul{
+    width: 100%;
+  
+   justify-content:center;
+   padding: 0 12px;
+   align-items: center;
+   display: none;
+    
+  }
+
+
+
+.dropdown{
+  display:block;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  top: 25%;
+  right:35px;
+}
+
+.dropdown button{
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 1rem;
+  font-size: 25px;
+ 
+}
+
+.nav ul li{
+  /* display: block; */
+  width:100%;
+  height: auto;
+  /* margin-left: 20px;  */
+  color: rgb(173, 173, 196);
+  font-size: 17px;
+  justify-content: center;
+ 
+}
+
+.dropdown-menu li i{
+   color: #d9610c;
+}
+
+.nav ul li a{
+   color: #0d0d0d;
+  
+}
+
+
+  .room-grid,
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .booking {
+    flex-direction: column;
+  }
+
+  
+}
+
+@media(max-width: 1200px){
+
+    /* Main content section */
+    .main_content_box{
+      flex-direction: column-reverse;
+      gap: 40px;
+      height: 100vh;
+
+    }
+
+   .main_content_cont {
+    width: 100%;
+     background:linear-gradient(to right, #0f0f14d3,#434345da),#0f0f14d0;
+   
+  }
+
+ 
+  .img_section  {
+    width: 100%;
+    height: 700px !important;  
+    overflow: hidden;
+  }
+
+
+  .img_section img {
+    width: 100%;
+    opacity: 1; 
+    transform: translateX(100%); 
+    /* object-fit: contain; */
+    
+  }
+
+
+  /* Brings the active mobile image perfectly into the view frame */
+  .img_section img.active {
+    transform: translateX(0);
+  }
+
+  /*  */
+  .img_section img.slide-left {
+    transform: translateX(-100%);
+  }
+
+
+    .text-section{
+        width: 100%;
+         max-height: 100hv ;
+        font-size: 10px;
+      
+      
+    }
+
+    .text-A{
+       width: 100%;
+       height: auto;
+        font-size:px;
+        line-height: 1.5;
+        
+    }
+
+  
+
+    .Bookingbtn{
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        order: 3;
+       
+    }
+
+    /* Rooms section - This will appear AFTER the button */
+
+    .rooms{
+        order: 4;
+        width: 100%;
+        margin-top: 0%;
+        margin-top: 0px;
+   
+    }
+
+    .rooms h2{
+        text-align: center;
+        font-size: 24px;
+        padding: 0 10px;
+        margin-top:100%;
+    }
+
+    .room-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-top: 40%;
+    }
+
+    .room-card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .room-card img{
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align:left;
+  }
+
+  .footer-col form {
+    align-items: left;
+  }
+
+  .footer-col input {
+    width: 100%;
+  }
+}
+
+
+
+
+/* 
+@media (max-width: 550px) {
+
+.dropdown{
+  display:block;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  top: 25%;
+  right:35px;
+}
+
+
+.dropdown button{
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 1rem;
+  font-size: 25px;
+ 
+}
 
 
 .logo_content_wrapp{
@@ -683,18 +1340,37 @@
     font-size: 18px;
   }
 
-}
+} */
+
+
+
+/* @media (max-width: 550px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align:left;
+  }
+
+  .footer-col form {
+    align-items: left;
+  }
+
+  .footer-col input {
+    width: 100%;
+  }
+} */
+
+
 
 
 /* Tablet */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
 /* Mobile */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: 1fr;
     text-align:left;
@@ -707,24 +1383,11 @@
   .footer-col input {
     width: 100%;
   }
-}
+} */
 
 
 /* Mobile */
-@media (max-width: 900px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align:left;
-  }
 
-  .footer-col form {
-    align-items: left;
-  }
-
-  .footer-col input {
-    width: 100%;
-  }
-}
 
 @media (max-width: 900px){
 
@@ -815,119 +1478,3 @@
 
 
 
-@media screen and (max-width: 550px){
-
-    /* Main content section */
-    .main_content_box{
-         flex-direction: column-reverse;
-         gap: 40px;
-      height: 100vh;
-
-    }
-
-   .main_content_cont {
-    width: 100%;
-     background:linear-gradient(to right, #0f0f14d3,#434345da),#0f0f14d0;
-   
-  }
-
- 
-  .img_section  {
-    width: 100%;
-    height: 700px !important;  
-    overflow: hidden;
-  }
-
-
-  .img_section img {
-    width: 100%;
-    opacity: 1; 
-    transform: translateX(100%); 
-    /* object-fit: contain; */
-    
-  }
-
-
-  /* Brings the active mobile image perfectly into the view frame */
-  .img_section img.active {
-    transform: translateX(0);
-  }
-
-  /* Forces previous images to slide out to the left (-100%) */
-  .img_section img.slide-left {
-    transform: translateX(-100%);
-  }
-
-
-
-
-
-
-    .text-section{
-        width: 100%;
-         max-height: 100hv ;
-   
-     
-   
-
-   
-        font-size: 10px;
-      
-      
-    }
-
-    .text-A{
-       width: 100%;
-       height: auto;
-        font-size:px;
-        line-height: 1.5;
-        
-    }
-
-  
-
-    .Bookingbtn{
-        width: 100%;
-        padding: 12px;
-        margin-top: 20px;
-        order: 3;
-       
-    }
-
-    /* Rooms section - This will appear AFTER the button */
-
-    .rooms{
-        order: 4;
-        width: 100%;
-        margin-top: 0%;
-        margin-top: 0px;
-   
-    }
-
-    .rooms h2{
-        text-align: center;
-        font-size: 24px;
-        padding: 0 10px;
-        margin-top:100%;
-    }
-
-    .room-grid{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        margin-top: 40%;
-    }
-
-    .room-card{
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .room-card img{
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 10px;
-    }
-}
