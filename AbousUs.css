@@ -914,15 +914,13 @@
     width:auto;
     height:auto;
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
   }
   
    .Address_photo img{
-  width:100%;
+   width:100%;
    gap: 5px;
    padding: 1rem;
-   /* display: flex; */
-    
    }
 
 
