@@ -38,9 +38,7 @@
      font-family: "Cormorant Garamond", serif;
 }
 
-.h2_text img{
- 
-}
+
 
 
 
@@ -403,15 +401,7 @@
 
 }
 
-
-
-.roomNumber{
- /* border:  1px solid red; */
- /* display: none; */
-}  
-             
-
-
+        
  /* /Footer Main  */
 
 .footer {
@@ -641,14 +631,15 @@
 
     /* Main content section */
     .main_content_box{
+      width: 100%;
+      height: auto;
       flex-direction: column-reverse;
       gap: 40px;
-      height: 100vh;
-
     }
 
    .main_content_cont {
     width: 100%;
+    height: auto;
      background:linear-gradient(to right, #0f0f14d3,#434345da),#0f0f14d0;
    
   }
@@ -906,14 +897,15 @@
 
     /* Main content section */
     .main_content_box{
+      width: 100%;
+      height: auto;
       flex-direction: column-reverse;
       gap: 40px;
-      height: 100vh;
-
     }
 
    .main_content_cont {
     width: 100%;
+    height: auto;
      background:linear-gradient(to right, #0f0f14d3,#434345da),#0f0f14d0;
    
   }
@@ -1171,14 +1163,15 @@
 
     /* Main content section */
     .main_content_box{
+      width: 100%;
+      height: auto;
       flex-direction: column-reverse;
       gap: 40px;
-      height: 100vh;
-
     }
 
    .main_content_cont {
     width: 100%;
+    height: auto;
      background:linear-gradient(to right, #0f0f14d3,#434345da),#0f0f14d0;
    
   }

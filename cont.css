@@ -820,6 +820,9 @@ h1, h2, h3, .title {
 
   .info-card {
     padding: 28px 20px;
+    width: 100%;
+    height: auto;
+    
   }
 
   .info-card h3 {
@@ -829,12 +832,17 @@ h1, h2, h3, .title {
   .quick-col.title {
     font-size: 1.35rem;
   }
+
+
+  
 }
 
 /* small mobile */
 @media (max-width: 550px) {
   .container {
     width: min(100% - 22px, var(--container));
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -1083,6 +1091,9 @@ h1, h2, h3, .title {
 
   .info-card {
     padding: 28px 20px;
+    width: 100%;
+    height: auto;
+
   }
 
   .info-card h3 {
@@ -1098,6 +1109,8 @@ h1, h2, h3, .title {
 @media (max-width: 750px) {
   .container {
     width: min(100% - 22px, var(--container));
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -1344,6 +1357,8 @@ h1, h2, h3, .title {
 
   .info-card {
     padding: 28px 20px;
+     width: 100%;
+    height: auto;
   }
 
   .info-card h3 {
@@ -1359,6 +1374,8 @@ h1, h2, h3, .title {
 @media (max-width: 1200px) {
   .container {
     width: min(100% - 22px, var(--container));
+    display: flex;
+    flex-direction: column;
   }
 
 

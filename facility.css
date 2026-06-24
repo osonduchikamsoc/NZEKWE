@@ -679,7 +679,7 @@ grid-template-columns: repeat(auto-fit, minmax (300px,1fr));
   
 .articles-container{
   width: 100%; 
-  height: 500px; 
+  height: auto; 
   background-color: #ede4e4b1;
   justify-content: center;
   margin: auto;
@@ -899,7 +899,7 @@ grid-template-columns: repeat(auto-fit, minmax (300px,1fr));
   
 .articles-container{
   width: 100%; 
-  height: 500px; 
+  height: auto; 
   background-color: #ede4e4b1;
   justify-content: center;
   margin: auto;
@@ -1109,7 +1109,7 @@ grid-template-columns: repeat(auto-fit, minmax (300px,1fr));
   
 .articles-container{
   width: 100%; 
-  height: 500px; 
+  height: auto; 
   background-color: #ede4e4b1;
   justify-content: center;
   margin: auto;
