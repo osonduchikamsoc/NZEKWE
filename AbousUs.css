@@ -703,10 +703,11 @@
   
    .Address_photo img{
    width: 100%;
+    height:450px;
    gap: 5px;
    padding: 1rem;
-   /* display: flex; */
-   /* flex-direction:column; */
+   /* display: flex; 
+   flex-direction:column; */
     
    }
 
@@ -918,9 +919,13 @@
   }
   
    .Address_photo img{
-   width:100%;
+   width: 100%;
+    height:450px;
    gap: 5px;
    padding: 1rem;
+   /* display: flex; 
+   flex-direction:column; */
+    
    }
 
 
@@ -1133,10 +1138,12 @@
   }
   
    .Address_photo img{
-  width: 100%;
+   width: 100%;
+    height:450px;
    gap: 5px;
    padding: 1rem;
-   /* display: flex; */
+   /* display: flex; 
+   flex-direction:column; */
     
    }
  }
